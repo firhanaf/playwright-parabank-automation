@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Target & Modul */
+    "target": "ES2022",                          /* Menggunakan fitur JavaScript modern (2022+) */
+    "module": "NodeNext",                        /* Mendukung standar modul Node.js modern (ESM & CommonJS) */
+    "moduleResolution": "NodeNext",              /* Strategi pencarian modul yang sesuai dengan Node.js modern */
+
+    /* Interoperabilitas Modul */
+    "esModuleInterop": true,                     /* Memungkinkan import CommonJS menggunakan sintaks ES6 default */
+    "allowSyntheticDefaultImports": true,        /* Mengizinkan import default dari modul tanpa default export */
+    "forceConsistentCasingInFileNames": true,    /* Memastikan case-sensitivity file konsisten di semua OS */
+
+    /* Pengecekan Tipe Ketat (Kualitas Kode) */
+    "strict": true,                              /* Mengaktifkan semua opsi pengecekan tipe yang ketat */
+    "noImplicitAny": true,                       /* Error jika ada variabel yang tipe datanya tidak sengaja menjadi 'any' */
+    "strictNullChecks": true,                    /* Memastikan variabel null/undefined ditangani secara eksplisit */
+    "noUnusedLocals": true,                      /* Error jika ada variabel lokal yang tidak digunakan */
+    "noUnusedParameters": true,                  /* Error jika ada parameter fungsi yang tidak digunakan */
+    "noImplicitReturns": true,                   /* Memastikan semua jalur fungsi mengembalikan nilai */
+    "noFallthroughCasesInSwitch": true,          /* Mencegah bug akibat lupa menulis 'break' pada switch-case */
+
+    /* Output & Struktur Project */
+    "outDir": "./dist",                          /* Folder tujuan hasil kompilasi JavaScript */
+    "rootDir": "./src",                          /* Folder utama kode sumber TypeScript Anda */
+    "removeComments": true,                      /* Menghapus komentar di file output JS untuk memperkecil ukuran */
+    "sourceMap": true,                           /* Membuat file .map untuk mempermudah debugging kode produksi */
+
+    /* Environment & Global Types */
+    "types": ["node"],                           /* Mengenali API global Node.js seperti 'process' dan '__dirname' */
+    "skipLibCheck": true                         /* Mempercepat kompilasi dengan melewati pengecekan tipe pada node_modules */
+  },
+  "include": ["src/**/*"],                       /* File yang akan disertakan dalam kompilasi */
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"] /* Folder/file yang wajib diabaikan */
+}
