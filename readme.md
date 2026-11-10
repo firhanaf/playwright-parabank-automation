@@ -4,7 +4,7 @@ An end-to-end automated testing repository for the ParaBank banking platform, bu
 
 ## Project Status
 
-- [x] Base framework configuration and environmental rules (Fase 1)
+- [x] Base framework configuration and environmental rules (Phase 1)
 - [x] Initial infrastructure smoke test tier
 - [ ] Page Object Model implementation (POM) (In Progress)
 
