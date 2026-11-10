@@ -8,3 +8,11 @@ node_modules/
 /playwright/.auth/
 
 
+# Editor and Workspace Environments
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
